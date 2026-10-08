@@ -186,12 +186,7 @@ class Database:
             if not saved.get('custom_shortner'):
                 res['shortner'] = SHORTENER_WEBSITE
                 res['api'] = SHORTENER_API
-            if not saved.get('custom_shortner_two'):
-                res['shortner_two'] = SHORTENER_WEBSITE2
-                res['api_two'] = SHORTENER_API2
-            if not saved.get('custom_shortner_three'):
-                res['shortner_three'] = SHORTENER_WEBSITE3
-                res['api_three'] = SHORTENER_API3
+            
             return res
         else:
             return default.copy()
